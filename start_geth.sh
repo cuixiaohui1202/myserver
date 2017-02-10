@@ -1,0 +1,3 @@
+
+geth --rpc --testnet console
+

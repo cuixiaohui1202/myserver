@@ -1,0 +1,29 @@
+{
+  "name": "myserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "mocha",
+    "posttest": "echo 'Post-test: the test has been run!'",
+    "start": "node server.js",
+    "start:dev": "node server.js 4000",
+    "lint": "jshint *.js **/*.js --exclude **/ipaddr.js,**/bignumber.js",
+    "precompile": "npm run clean",
+    "clean": "rimraf lib/*",
+    "compile": "npm run compile:ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.5.4",
+    "should": "^11.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
