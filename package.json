@@ -17,8 +17,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "body-parser": "^1.16.0",
     "gulp": "^3.9.1",
     "jshint": "^2.9.4",
+    "method-override": "^2.3.7",
     "mocha": "^3.2.0",
     "rimraf": "^2.5.4",
     "should": "^11.2.0"
